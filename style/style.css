@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, "Trebuchet MS", sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1153px;
+}
+a {
+    text-decoration: none;
+}
+
+/*____header____*/
+header {
+    height: 250px;
+    max-width: 1153px;
+    position: relative;
+}
+.header-img {
+    background: url(../imagens/topo-imagem-principal.png) no-repeat;
+    z-index: 1;
+    position: absolute;
+    height: 250px;
+    width: 798px;
+}
+.header-img img {
+    padding: 15px;
+}
+.header-menu {
+    height: 250px;
+    width: 450px;
+    background: url(../imagens/topo-imagem-lateral.png) no-repeat;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+}
+
+.menu-area {
+    margin-left: 100px;
+    padding-right: 10px;
+}
+
+.header-checkin {
+    margin: 10px 2px 10px 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #b5ab56;
+    border-bottom: 1px solid #b5ab56;
+    padding: 7px 0;
+}
+.header-checkin p {
+    font-size: 0.7em;
+    color: #8b8448;
+}
+.header-checkin button {
+    font-size: 0.8em;
+    width: 70px;
+    color: #fff5b0;
+    background: #a29750;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85%;
+    list-style: none;
+    margin: 8px 0;
+    font-size: 0.8em;
+}
+.nav-menu a {
+    color: #8b8448;
+    padding: 6px;
+}
+.nav-menu a:hover {
+    background: #ede9cc;
+}
+
+/**____main____**/
+.intersection {
+    background: url(../imagens/bg-linha.gif);
+    height: 6px;
+}
+main {
+    display: flex;
+}
+.main-description {
+    width: 50%;
+    background: #ede9cc;
+    padding: 10px 20px 30px;
+}
+.main-description h1 {
+    font-size: 1.1em;
+    color: #615b2d;
+    padding: 5px 0;
+}
+.main-description p {
+    padding: 5px 0;
+}
+
+/*____aside____*/
+aside{
+    width: 50%;
+    background: #dcd8b7;
+    padding: 10px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside a {
+    cursor: pointer;
+}
+aside a:hover {
+    background: #ede9cc;
+}
+.aside-box {
+    display: flex;
+    padding: 10px;
+}
+.aside-box img {
+    width: 150px;
+    max-height: 97px;
+}
+.aside-inner-box h2{
+    font-size: 1em;
+    color: #615b2d;
+    padding: 5px;
+    background: url(../imagens/ornamento.png) right center no-repeat;
+
+}
+.aside-inner-box p {
+    font-size: 0.85em;
+    color: #000;
+    padding: 5px;
+}
+footer {
+    color: #7d7640;
+    padding: 15px 0;
+    background: url(../imagens/bg-rodape.png) repeat x top;
+}
+
+/*____media____*/
+@media (max-width:920px) {
+    .container {width: 100%;}
+}
+@media (max-width:600px) {
+    
+    .header-img, .header-img img {display: none;}
+    .header-menu {
+        background: #dbd294;
+        width: 100%;
+    }
+    .header-checkin {width: 100%;}
+    .menu-area {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    .main-description, aside {
+        width: 100%;
+        padding: 0;
+    }
+    .main-description h1{
+        padding: 10px;
+    }
+    .main-description article {
+        padding: 5px 10px;
+    }
+}
